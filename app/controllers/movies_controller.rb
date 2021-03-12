@@ -20,6 +20,12 @@ class MoviesController < ApplicationController
         render json: movie
     end
 
+    def update
+        movie = Movie.find(params[:id])
+        movie.update(likes: (params[:likes]))
+        render json: movie
+    end
+
     private
     def movie_params
         params.require(:movie).permit(:name, :release_date, :image, :likes)
