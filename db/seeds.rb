@@ -10,9 +10,9 @@ Comment.destroy_all
 Movie.destroy_all
 User.destroy_all
 
-m1 = Movie.create(name: "The Lion King", release_date: 1994, image: "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg")
-m2 = Movie.create(name: "Toy Story", release_date: 1995, image: "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg")
-m3 = Movie.create(name: "The Incredibles", release_date: 2004, image: "https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_.jpg")
+m1 = Movie.create(name: "The Lion King", release_date: 1994, image: "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg", likes: 0)
+m2 = Movie.create(name: "Toy Story", release_date: 1995, image: "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg", likes: 0)
+m3 = Movie.create(name: "The Incredibles", release_date: 2004, image: "https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_.jpg", likes: 0)
 
 u1 = User.create(name: "Jon Snow")
 u2 = User.create(name: "Arya Stark")
